@@ -1,44 +1,27 @@
-# pet_analyzer.py
-import tensorflow as tf
-import tensorflow_hub as hub
-import numpy as np
 import librosa
-
-print("Loading YAMNet model (first time may take a few seconds)...")
-yamnet_model = hub.load("https://tfhub.dev/google/yamnet/1")
-
-# Get class names
-class_map_path = yamnet_model.class_map_path().numpy()
-with open(class_map_path, "r") as f:
-    class_names = [line.strip() for line in f.readlines()]
+import numpy as np
 
 def analyze_audio(file_path):
-    # Load audio
-    waveform, sr = librosa.load(file_path, sr=16000)  # YAMNet expects 16kHz
-    waveform = waveform.astype(np.float32)
-
-    # Run YAMNet
-    scores, embeddings, spectrogram = yamnet_model(waveform)
-    mean_scores = np.mean(scores, axis=0)
-    top_class = np.argmax(mean_scores)
-    label = class_names[top_class]
-    confidence = float(mean_scores[top_class])
-
-    # Simplified pet classification
-    if "bark" in label.lower():
+    y, sr = librosa.load(file_path, sr=None, mono=True)
+    duration = librosa.get_duration(y=y, sr=sr)
+    rms = np.sqrt(np.mean(y**2))
+    
+    # Pitch estimate
+    pitch = librosa.yin(y, fmin=80, fmax=2000)
+    pitch_mean = float(np.mean(pitch))
+    # Simple heuristics
+    if pitch_mean > 400:
         pet_type = "dog"
-    elif "meow" in label.lower():
-        pet_type = "cat"
-    elif any(word in label.lower() for word in ["bird", "chirp", "tweet"]):
-        pet_type = "bird"
     else:
-        pet_type = "dog"  # Default to dog for unknown sounds
-
-    mood = "excited" if confidence > 0.5 else "calm"
+        pet_type = "cat"
+    
+    # Optional: add mood based on loudness
+    mood = "excited" if rms > 0.05 else "calm"
 
     return {
+        "duration": round(duration,2),
+        "rms": round(float(rms),5),
+        "pitch": round(pitch_mean,1),
         "type": pet_type,
-        "label": label,
-        "confidence": round(confidence, 2),
         "mood": mood
     }
