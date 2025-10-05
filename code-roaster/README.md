@@ -8,7 +8,8 @@
 
 ## Table of Contents
 
-- [Features](#features)  
+- [Features](#features)
+- [Tech Stack](#techstack)
 - [Examples](#examples)  
 - [Usage](#usage)  
 - [License](#license)  
@@ -24,6 +25,15 @@
 - 🕳️ Flags **empty functions** and **too many TODOs**  
 - 🎨 Notices **bad indentation** and **nested loops**  
 - 💤 Roasts **single-line code** and **repeated variable names**  
+
+---
+
+---
+## Tech Stack
+
+- **Language:** JavaScript (ES6+)
+- **Frontend:** HTML5, CSS3 (custom styling)
+- **Optional tooling:** Node.js (for local dev/build), Vite/Webpack or plain static hosting
 
 ---
 
