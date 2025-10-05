@@ -1,0 +1,18 @@
+{
+  "name": "lolware",
+  "version": "1.0.0",
+  "description": "A website that has AI fun games. It is for you to explore and experiment with AI.\r Add Gemini API somewhere in the code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "openai": "^6.1.0"
+  }
+}
