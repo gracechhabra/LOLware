@@ -1,0 +1,19 @@
+# Virtual environments
+.venv/
+emotion_therapist/.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets
+.env
+
+# IDE and OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
