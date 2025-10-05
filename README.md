@@ -1,9 +1,9 @@
 # PlayWare 😎🎉
 
 
-"LOL Ware is a fun tech playground where AI meets entertainment. Detect emotions, translate your pet’s barks, or roast your code—all in one place. It’s simple, interactive, and designed to make exploring technology fun!"
+Play Ware is a fun tech playground where AI meets entertainment. Detect emotions, translate your pet’s barks, or roast your code—all in one place. It’s simple, interactive, and designed to make exploring technology fun!"
 
-Welcome to **LOL Ware**, a fun and experimental website featuring a collection of exciting projects! From detecting emotions to translating your pet’s barks, we’ve built a playground of interactive and innovative tools.
+Welcome to **Play Ware**, a fun and experimental website featuring a collection of exciting projects! From detecting emotions to translating your pet’s barks, we’ve built a playground of interactive and innovative tools.
 
 PlayWare is a tech playground that blends fun and meaningful projects. Explore AI-powered tools to detect emotions, translate your pet’s barks, roast your code, or use our ASL Translator to convert sign language into words. Whether for entertainment or accessibility, PlayWare makes technology engaging, interactive, and impactful!
 
