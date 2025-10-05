@@ -46,17 +46,22 @@ function crazyFunction() {
   console.log("Last log");
   // Imagine this continues to make function >30 lines
 }
+```
 
 ### Test 2: No Comments + Magic Numbers
+```python
 def calculate():
     result = 42 * 7 + 99
     return result
+```
 
 ### Test 3: Empty Function + Too many TODOs
+```javascript
 function placeholder() {}
-
+```
 
 ### Test 4: Bad Indentation + Nested Loops
+```javascript
 function nested() {
     for (let i = 0; i < 5; i++) {
 	for (let j = 0; j < 5; j++) {
@@ -68,3 +73,4 @@ function nested() {
 	}
     }
 }
+```
