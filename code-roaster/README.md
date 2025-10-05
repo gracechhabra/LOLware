@@ -1,5 +1,36 @@
-Code Roaster
-Test 1: Long Function + Console Logs + One-letter variables
+# Code Roaster 🔥
+
+**Code Roaster** is a fun website that roasts your code every time you write something. Perfect for developers who need a laugh (or a reality check) while coding!  
+
+![Code Roast](https://img.shields.io/badge/Status-Active-brightgreen) ![Language](https://img.shields.io/badge/Language-JavaScript%20%7C%20Python-blue) ![License](https://img.shields.io/badge/License-MIT-yellow)
+
+---
+
+## Table of Contents
+
+- [Features](#features)  
+- [Examples](#examples)  
+- [Usage](#usage)  
+- [License](#license)  
+
+---
+
+## Features 🎯
+
+- ⚡ Detects **long functions**  
+- 🤯 Calls out **one-letter variable names**  
+- 📝 Spots **too many `console.log` statements**  
+- 🪄 Warns about **magic numbers**  
+- 🕳️ Flags **empty functions** and **too many TODOs**  
+- 🎨 Notices **bad indentation** and **nested loops**  
+- 💤 Roasts **single-line code** and **repeated variable names**  
+
+---
+
+## Examples 💻
+
+### Test 1: Long Function + Console Logs + One-letter variables
+```javascript
 function crazyFunction() {
   let x = 5;
   let y = 10;
@@ -16,41 +47,16 @@ function crazyFunction() {
   // Imagine this continues to make function >30 lines
 }
 
-
-Expected roasts triggered:
-
-Long function → “This function is longer than a Bollywood movie.”
-
-One-letter variables → “Ah yes, x, y, and z — truly the holy trinity of confusion.”
-
-Too many console.log → “This isn’t debugging, it’s a full-blown confessional.”
-
-🔹 Test 2: No comments + Magic Numbers
+### Test 2: No Comments + Magic Numbers
 def calculate():
     result = 42 * 7 + 99
     return result
 
-
-Expected roasts triggered:
-
-No comments → “Silent but deadly — no comments found. Future you is crying.”
-
-Magic numbers → “Magic numbers everywhere! Are we coding or casting spells?”
-
-🔹 Test 3: Empty Function + Too many TODOs
-// TODO: implement login
-// TODO: implement logout
-// TODO: implement signup
+### Test 3: Empty Function + Too many TODOs
 function placeholder() {}
 
 
-Expected roasts triggered:
-
-Empty function → “Empty function? Was this a placeholder or procrastination?”
-
-Too many TODOs → “Looks like you’re writing a wish list, not code.”
-
-🔹 Test 4: Bad Indentation + Nested Loops
+### Test 4: Bad Indentation + Nested Loops
 function nested() {
     for (let i = 0; i < 5; i++) {
 	for (let j = 0; j < 5; j++) {
@@ -62,28 +68,3 @@ function nested() {
 	}
     }
 }
-
-
-Expected roasts triggered:
-
-Nested loops > 3 → “This loop is so deep, you might find oil down there.”
-
-Bad indentation → “Mixed tabs and spaces… is this code or abstract art?”
-
-🔹 Test 5: Single-line code
-console.log("Hello World!");
-
-
-Expected roast triggered:
-
-Single-line code → “Two lines of code… barely enough to wake the compiler.”
-
-🔹 Test 6: Repeated variable names
-let x1 = 5;
-let x2 = 10;
-let x3 = 15;
-
-
-Expected roast triggered:
-
-Repeated variable names → “Naming variables x1, x2… we get it, you like numbers.”
