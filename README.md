@@ -1,4 +1,4 @@
-# LOL Ware 😎🎉
+# PlayWare 😎🎉
 
 
 "LOL Ware is a fun tech playground where AI meets entertainment. Detect emotions, translate your pet’s barks, or roast your code—all in one place. It’s simple, interactive, and designed to make exploring technology fun!"
